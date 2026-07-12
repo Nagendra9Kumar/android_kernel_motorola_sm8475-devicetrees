@@ -29,6 +29,10 @@ ifeq ($(CONFIG_LYNKCO_DTB),y)
 dtbo-$(CONFIG_ARCH_DIWALI) += \
 	diwali-camera-sensor-lynkco-evb1.dtbo
 endif  #($(CONFIG_LYNKCO_DTB),y)
+ifeq ($(CONFIG_TANK_DTB),y)
+dtbo-$(CONFIG_ARCH_DIWALI) += \
+	diwali-camera-sensor-tank-evb1.dtbo
+endif  #($(CONFIG_TANK_DTB),y)
 
 dtbo-$(CONFIG_ARCH_CAPE) += cape-camera.dtbo
 #remove useless qcom device tree in moto build
